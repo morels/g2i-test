@@ -1,0 +1,12 @@
+{
+  "name": "trivia-game",
+  "version": "1.0.0",
+  "description": "Technical challenge to evaluate Luca Morelli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["g2i", "react", "challenge"],
+  "author": "Luca Morelli <luca.morelli.lm@gmail.com>",
+  "license": "ISC"
+}
