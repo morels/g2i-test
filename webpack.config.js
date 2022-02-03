@@ -3,6 +3,8 @@ const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin"
 const path = require("path");
 const webpack = require("webpack");
 
+require("dotenv").config();
+
 const isDevelopment = process.env.NODE_ENV !== "production";
 
 module.exports = {
@@ -10,6 +12,15 @@ module.exports = {
   entry: "./src/index.tsx",
   devServer: {
     hot: true,
+    proxy: {
+      "/api/questions": {
+        target: process.env.API_HOST,
+        changeOrigin: true,
+        secure: false,
+        pathRewrite: { "^/api/questions": "" },
+      },
+      port: process.env.PORT,
+    },
   },
   target: "web",
   output: {

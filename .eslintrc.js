@@ -10,6 +10,8 @@ module.exports = {
     "react/function-component-definition": ["error", {
       namedComponents: ["function-declaration", "arrow-function"],
       unnamedComponents: "arrow-function",
-    }]
+    }],
+    "import/prefer-default-export": "off",
+    "arrow-parens": ["error", "as-needed"]
   }
 };

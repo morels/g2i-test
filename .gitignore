@@ -1,5 +1,8 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,react,node,git
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,react,node,git
+# Created by https://www.toptal.com/developers/gitignore/api/macos,react,node,git,dotenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,react,node,git,dotenv
+
+### dotenv ###
+.env
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -121,7 +124,6 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
 .env.development.local
 .env.test.local
 .env.production.local
@@ -198,4 +200,4 @@ psd
 thumb
 sketch
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,react,node,git
+# End of https://www.toptal.com/developers/gitignore/api/macos,react,node,git,dotenv
