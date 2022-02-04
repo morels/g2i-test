@@ -3,24 +3,24 @@ import { Card } from "components/Card";
 import { Container } from "components/Container";
 import { Title } from "components/Title";
 import React, { FC } from "react";
+import { useTrivia } from "../Trivia";
 
 export const Question: FC = () => {
-  const category = "Entertainment: Video Games";
-  const question = "Unturned originally started as a Roblox game";
+  const { setAnswer, questions, currentQuestion } = useTrivia();
 
   return (
     <Container bottom={(
       <div>
-        <Button onClick={console.log}>False</Button>
-        <Button onClick={console.log}>True</Button>
+        <Button onClick={() => setAnswer("False")}>False</Button>
+        <Button onClick={() => setAnswer("True")}>True</Button>
       </div>
     )}
     >
-      <Title>{category}</Title>
+      <Title>{questions[currentQuestion].category}</Title>
       <Card>
-        <p>{question}</p>
+        <p dangerouslySetInnerHTML={{ __html: questions[currentQuestion].question }} />
       </Card>
-      <p>1 of 10</p>
+      <p>{`${currentQuestion + 1} of 10`}</p>
     </Container>
   );
 };

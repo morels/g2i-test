@@ -1,26 +1,11 @@
-import { BaseLayout } from "components/BaseLayout";
-import React, { useEffect } from "react";
-import { useQuestions } from "./questions/useQuestions";
-import { Start } from "./trivia/views/start";
+import React from "react";
+import { TriviaProvider } from "./trivia/Trivia";
+import { Main } from "./trivia/views/main";
 
-const App = () => {
-  const { getQuestions } = useQuestions();
-
-  // eslint-disable-next-line
-  useEffect(() => {
-    const fetch = async () => {
-      const quesitons = await getQuestions();
-      // eslint-disable-next-line no-console
-      console.log("data", quesitons);
-    };
-    fetch();
-  }, [getQuestions]);
-
-  return (
-    <BaseLayout>
-      <Start />
-    </BaseLayout>
-  );
-};
+const App = () => (
+  <TriviaProvider>
+    <Main />
+  </TriviaProvider>
+);
 
 export default App;

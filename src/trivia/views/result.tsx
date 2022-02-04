@@ -4,23 +4,24 @@ import { Title } from "components/Title";
 import React, { FC } from "react";
 import { Answer } from "../components/Answer";
 import { AnswerList } from "../components/AnswerList";
+import { useTrivia } from "../Trivia";
 
 export const Result: FC = () => {
-  const answers = [];
-  const questions = [];
-  const score = "3 / 10";
+  const { replay, answers, questions } = useTrivia();
+  const correctScores = questions.map((q, i) => q.incorrectAnswers[0] !== answers[i]);
+  const scoreValue = correctScores.reduce((s, total) => total + s, 0);
 
   return (
-    <Container bottom={(<Button onClick={console.log}>PLAY AGAIN?</Button>)}>
+    <Container bottom={(<Button onClick={() => replay()}>PLAY AGAIN?</Button>)}>
       <Title>
         You scored
         <br />
-        {score}
+        {`${scoreValue} / 10`}
       </Title>
       <AnswerList>
-        {questions.map((q, i) => (
+        {questions.map(({ question }, i) => (
           // eslint-disable-next-line react/no-array-index-key
-          <Answer key={`${i}`} kind="correct">Unturned originally started as a  Roblox game</Answer>
+          <Answer key={`${i}`} kind={correctScores[i] ? "correct" : "incorrect"}>{question}</Answer>
         ))}
       </AnswerList>
     </Container>
