@@ -997,6 +997,30 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.6.tgz#d5e0706cf8c6acd8c6032f8d54070af261bbbb2f"
   integrity sha512-ws57AidsDvREKrZKYffXddNkyaF14iHNHm8VQnZH6t99E8gczjNN0GpvcGny0imC80yQ0tHz1xVUKk/KFQSUyA==
 
+"@dr.pogodin/babel-plugin-react-css-modules@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@dr.pogodin/babel-plugin-react-css-modules/-/babel-plugin-react-css-modules-6.6.0.tgz#e5c70ef586c38b257b768e2b74595c1ca239e387"
+  integrity sha512-eIXXYtV7TLBERereBsmFO60bwORAOtbBUEZZ29Agawnx/sTzGGjexray7t6xJl+Bg5aQcj+0iRNpQvAy+zekXA==
+  dependencies:
+    "@babel/plugin-syntax-jsx" "^7.16.7"
+    "@babel/types" "^7.16.8"
+    "@dr.pogodin/postcss-modules-parser" "^1.2.4"
+    ajv "^8.6.3"
+    ajv-keywords "^5.0.0"
+    cssesc "^3.0.0"
+    loader-utils "^3.2.0"
+    postcss-modules-extract-imports "^3.0.0"
+    postcss-modules-local-by-default "^4.0.0"
+    postcss-modules-scope "^3.0.0"
+    postcss-modules-values "^4.0.0"
+
+"@dr.pogodin/postcss-modules-parser@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@dr.pogodin/postcss-modules-parser/-/postcss-modules-parser-1.2.4.tgz#738b765644c6c5c5198b5898b84c152e0d902482"
+  integrity sha512-269iH9bymu4r0+Mgy8vOTHPxVts+MsxRBn4iBYb7ETyeqqCj74/6JrJ6zSv6HLOCBpMTBYQjwBy3OjuJxV7eSA==
+  dependencies:
+    icss-utils "^5.1.0"
+
 "@eslint/eslintrc@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.0.5.tgz#33f1b838dbf1f923bfa517e008362b78ddbbf318"
@@ -1522,7 +1546,7 @@ ajv@^6.10.0, ajv@^6.12.4, ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^8.0.0, ajv@^8.8.0:
+ajv@^8.0.0, ajv@^8.6.3, ajv@^8.8.0:
   version "8.9.0"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.9.0.tgz#738019146638824dea25edcf299dcba1b0e7eb18"
   integrity sha512-qOKJyNj/h+OWx7s5DePL6Zu1KeM9jPZhwBqs+7DzP6bGOvqzVCSf0xueYmVuaC/oQ/VtS2zLMLHdQFbkka+XDQ==
@@ -3435,6 +3459,11 @@ loader-utils@^2.0.0:
     big.js "^5.2.2"
     emojis-list "^3.0.0"
     json5 "^2.1.2"
+
+loader-utils@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-3.2.0.tgz#bcecc51a7898bee7473d4bc6b845b23af8304d4f"
+  integrity sha512-HVl9ZqccQihZ7JM85dco1MvO9G+ONvxoGa9rkhzFsneGLKSUg1gJf9bWzhRhcvm2qChhWpebQhP44qxjKIUCaQ==
 
 locate-path@^2.0.0:
   version "2.0.0"

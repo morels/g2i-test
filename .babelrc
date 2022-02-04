@@ -10,6 +10,16 @@
     "@babel/preset-typescript"
   ],
   "plugins": [
-    "@babel/plugin-transform-runtime"
+    "@babel/plugin-transform-runtime",
+    [
+      "@dr.pogodin/react-css-modules",
+      {
+        // The default localIdentName in "css-loader" is "[hash:base64]",
+        // it is highly-recommended to explicitly specify the same value
+        // both here, and in "css-loader" options, including the hash length
+        // (the last digit in the template below).
+        "generateScopedName": "[hash:base64:6]"
+      }
+    ]
   ]
 }

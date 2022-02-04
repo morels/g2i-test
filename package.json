@@ -18,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.17.0",
+    "@dr.pogodin/babel-plugin-react-css-modules": "^6.6.0",
     "axios": "^0.25.0",
     "camelcase-keys": "^7.0.2",
     "dotenv": "^16.0.0",
