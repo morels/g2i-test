@@ -1,5 +1,7 @@
+import { BaseLayout } from "components/BaseLayout";
 import React, { useEffect } from "react";
 import { useQuestions } from "./questions/useQuestions";
+import { Start } from "./trivia/views/start";
 
 const App = () => {
   const { getQuestions } = useQuestions();
@@ -15,9 +17,9 @@ const App = () => {
   }, [getQuestions]);
 
   return (
-    <div>
-      <h1>Trivia game</h1>
-    </div>
+    <BaseLayout>
+      <Start />
+    </BaseLayout>
   );
 };
 

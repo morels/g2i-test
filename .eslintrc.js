@@ -12,6 +12,19 @@ module.exports = {
       unnamedComponents: "arrow-function",
     }],
     "import/prefer-default-export": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "sort-imports": ["error", { "ignoreCase": true, "ignoreDeclarationSort": true }],
+    "import/order": [1, {
+      "groups": [
+        "external", "builtin", "internal", "sibling", "parent", "index"
+      ],
+      "pathGroups": [
+        { "pattern": "components", "group": "internal" },
     "arrow-parens": ["error", "as-needed"]
+      ],
+      "pathGroupsExcludedImportTypes": ["internal"],
+      "alphabetize": { "order": "asc", "caseInsensitive": true }
+    }],
+    "react/require-default-props": "off"
   }
 };
