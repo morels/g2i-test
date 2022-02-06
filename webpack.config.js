@@ -71,6 +71,11 @@ module.exports = {
         test: /\.png|svg|jpg|gif$/,
         use: ["file-loader"],
       },
+      {
+        test: /\.woff2?$/i,
+        type: 'asset/resource',
+        dependency: { not: ['url'] },
+      },
     ],
   },
 };

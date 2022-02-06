@@ -1,0 +1,26 @@
+@custom-selector :--headings h1, .H1;
+@custom-selector :--blocks h1, ul, p, img;
+
+:--headings {
+  color: var(--dark);
+}
+
+h1,
+.H1 {
+  font-size: var(--font-size-24-px);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height);
+}
+
+:--blocks {
+  margin-top: 0;
+}
+
+p {
+  font-size: var(--font-size-16-px);
+  line-height: var(--line-height);
+}
+
+ul {
+  padding-left: var(--space-px);
+}
