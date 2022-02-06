@@ -7,7 +7,7 @@
     "start": "webpack serve  --hot --open --port ${PORT:='auto'}",
     "build": "webpack --config webpack.config.js --mode development",
     "lint:ts": "eslint . --ext .ts,.tsx",
-    "lint:css": "stylelint 'src/**/*.css'",
+    "lint:css": "stylelint '**/*.css'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -23,6 +23,13 @@
     "axios": "^0.25.0",
     "camelcase-keys": "^7.0.2",
     "dotenv": "^16.0.0",
+    "postcss": "^8.4.6",
+    "postcss-custom-selectors": "^6.0.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^6.2.1",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^7.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1"
@@ -48,6 +55,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "postcss-nesting": "^10.1.2",
     "react-refresh": "^0.11.0",
     "style-loader": "^3.3.1",
     "stylelint": "^14.3.0",
