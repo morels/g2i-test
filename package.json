@@ -22,6 +22,7 @@
     "@dr.pogodin/babel-plugin-react-css-modules": "^6.6.0",
     "axios": "^0.25.0",
     "camelcase-keys": "^7.0.2",
+    "clsx": "^1.1.1",
     "dotenv": "^16.0.0",
     "postcss": "^8.4.6",
     "postcss-custom-selectors": "^6.0.0",

@@ -1,0 +1,10 @@
+.CardNumber {
+  margin-top: var(--space-px);
+  text-align: center;
+}
+
+.ButtonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--space-px) / 2);
+}

@@ -1,0 +1,8 @@
+.Card {
+  border: var(--border-width) solid var(--dark);
+  padding: calc(var(--space-px) * 2);
+
+  & > * {
+    text-align: center;
+  }
+}

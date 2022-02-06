@@ -1,0 +1,39 @@
+.Button {
+  display: block;
+  padding: var(--space-px);
+  margin: 0;
+  color: var(--light);
+  letter-spacing: 1px;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-dark);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: var(--primary-dark);
+  }
+
+  &:active {
+    background-color: var(--primary-darker);
+  }
+
+  &[data-kind="secondary"] {
+    color: var(--white);
+    background-color: var(--secondary);
+
+    &:hover,
+    &:focus {
+      background-color: var(--secondary-dark);
+    }
+
+    &:active {
+      background-color: var(--secondary-darker);
+    }
+  }
+}

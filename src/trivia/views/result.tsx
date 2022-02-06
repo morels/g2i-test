@@ -21,7 +21,7 @@ export const Result: FC = () => {
       <AnswerList>
         {questions.map(({ question }, i) => (
           // eslint-disable-next-line react/no-array-index-key
-          <Answer key={`${i}`} kind={correctScores[i] ? "correct" : "incorrect"}>{question}</Answer>
+          <Answer key={`${i}`} kind={correctScores[i] ? "correct" : "incorrect"} text={question} />
         ))}
       </AnswerList>
     </Container>

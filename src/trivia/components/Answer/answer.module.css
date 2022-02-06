@@ -1,0 +1,17 @@
+.Container {
+  display: grid;
+  grid-template-columns: calc(var(--space-px) * 4) 1fr;
+  align-items: flex-start;
+  margin-bottom: var(--space-px);
+}
+
+.Icon {
+  justify-self: center;
+
+  /* adjust spacing basing on icon shape */
+  margin-top: 2px;
+}
+
+.Text {
+  margin: 0;
+}

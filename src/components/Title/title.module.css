@@ -1,3 +1,4 @@
 .Title {
-  color: red;
+  color: var(--primary);
+  text-align: center;
 }
