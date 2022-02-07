@@ -3,4 +3,5 @@
   flex-direction: column;
   justify-content: space-between;
   align-self: stretch;
+  flex-grow: 1;
 }

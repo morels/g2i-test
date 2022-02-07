@@ -21,4 +21,5 @@
   --space: 16;
   --space-px: 1rem;
   --border-width: 1px;
+  --max-width-px: 80rem;
 }
