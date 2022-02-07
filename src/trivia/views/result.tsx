@@ -9,7 +9,7 @@ import { useTrivia } from "../Trivia";
 export const Result: FC = () => {
   const { replay, answers, questions } = useTrivia();
   const correctScores = questions.map((q, i) => q.incorrectAnswers[0] !== answers[i]);
-  const scoreValue = correctScores.reduce((s, total) => total + s, 0);
+  const scoreValue = correctScores.reduce((total, s) => total + +s, 0);
 
   return (
     <Container bottom={(<Button onClick={() => replay()}>PLAY AGAIN?</Button>)}>
