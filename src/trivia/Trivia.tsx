@@ -15,6 +15,8 @@ type TriviaContextType = {
   questions: Question[];
   currentQuestion?: number;
   stage: Stage;
+  isLoading: boolean;
+  isError: boolean;
 };
 
 const TriviaContext = createContext<TriviaContextType | null>(null);
@@ -98,4 +100,4 @@ export const TriviaProvider: FC = ({ children }) => {
   );
 };
 
-export const useTrivia = () => useContext(TriviaContext);
+export const useTrivia = () => useContext(TriviaContext)!;
