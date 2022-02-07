@@ -20,7 +20,6 @@ module.exports = {
       ],
       "pathGroups": [
         { "pattern": "components", "group": "internal" },
-    "arrow-parens": ["error", "as-needed"]
       ],
       "pathGroupsExcludedImportTypes": ["internal"],
       "alphabetize": { "order": "asc", "caseInsensitive": true }
