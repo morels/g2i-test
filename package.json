@@ -1,7 +1,7 @@
 {
-  "name": "trivia-game",
+  "name": "trivia-rocks",
   "version": "1.0.0",
-  "description": "Technical challenge to evaluate Luca Morelli",
+  "description": "Trivia rocks! Technical challenge",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve  --hot --open --port ${PORT:='auto'}",
